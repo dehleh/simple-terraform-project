@@ -16,18 +16,18 @@ resource "aws_s3_bucket_public_access_block" "example" {
 
   block_public_acls       = false
   block_public_policy     = false
-  ignore_public_acls      = false
+  ignore_public_acls      = falsejhgdghdvjkh
   restrict_public_buckets = false
-}
+}jhgjyguhbfdkubdfh
 
 resource "aws_s3_bucket_acl" "example" {
   depends_on = [
     aws_s3_bucket_ownership_controls.example,
-    aws_s3_bucket_public_access_block.example,
+    aws_s3_bucket_public_access_block.example,ghfsdfyjghshkdfg
   ]
 
   bucket = aws_s3_bucket.mybucket.id
-  acl    = "public-read"
+  acl    = "public-read"hcdhdusdakladfhkfaj
 }
 
 resource "aws_s3_object" "index" {
